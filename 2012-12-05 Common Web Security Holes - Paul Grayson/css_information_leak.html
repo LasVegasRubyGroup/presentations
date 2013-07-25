@@ -1,0 +1,19 @@
+<html>
+<body>
+<style>
+a:link { background-color: white; }
+a:visited { background-color: yellow; }
+</style>
+test
+<a href="http://test-server-32bit:3000/" id="a1">test-server-32bit</a>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+$(window).load(function () {
+  if("yellow" == $("#a1").css("background-color"))
+    alert("you have visited the test site")
+  }
+  )
+</script>
+
+</html>

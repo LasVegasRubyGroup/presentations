@@ -1,0 +1,10 @@
+Install a basic Ubuntu server.
+apt-get install ruby htop emacs rubygems haproxy apache2-utils
+gem install bundler
+
+TO RUN UNICORN
+unicorn -c unicorn.conf
+
+TO RUN THIN
+thin -R config.ru --servers 4 start
+haproxy -f haproxy.cfg -db
