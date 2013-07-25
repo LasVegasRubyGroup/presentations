@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <div align="center" id="titlebar">
+      <h2>THE BIG PREDICTIONS PAGE</h2>
+      <hr>
+    </div>
+    <ul>
+      <li>
+        The world is going to end on <%= (Time.now + 2093402983).strftime('%m-%d-%Y') %>
+      </li>
+
+      <li>
+        The winning lottery numbers are
+        <font color="#F00">
+          <ul>
+            <% 6.times do %>
+              <li>
+                <%= Random.rand(49)+1 %>
+              </li>
+            <% end %>
+          </ul>
+        </font>
+      </li>
+
+      <% purple = %w[ Magenta Violet Mauve Lavender Mallow ] %>
+      <li>
+        Your favorite shade of purple is <%= purple[Random.rand(5)] %>
+      </li>
+    </ul>
+  </body>
+</html>
