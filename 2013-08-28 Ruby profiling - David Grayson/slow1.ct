@@ -1,0 +1,210 @@
+events: process_time
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Float#<
+0 263
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Fixnum#fdiv
+0 105607
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Rational#to_f
+0 206555
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Fixnum#fdiv
+calls=20593 17
+17 101525
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Fixnum#fdiv
+calls=861 17
+17 4082
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Rational#/
+0 115984
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Numeric#quo
+0 210751
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Rational#/
+calls=20593 17
+17 111829
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Rational#/
+calls=861 17
+17 4155
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Fixnum#-
+0 102873
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Time#-
+0 430893
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Fixnum#-
+calls=20593 17
+17 98942
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Numeric#quo
+calls=20593 17
+17 314364
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Rational#to_f
+calls=20593 17
+17 300407
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Fixnum#-
+calls=861 17
+17 3931
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Numeric#quo
+calls=861 17
+17 12372
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Rational#to_f
+calls=861 17
+17 11756
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Fixnum#+
+0 103728
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Time#initialize
+0 296259
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Fixnum#+
+calls=20693 17
+17 99851
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Fixnum#+
+calls=865 17
+17 3877
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=<Class::Time>#now
+0 220530
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Time#initialize
+calls=20693 17
+17 383946
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Time#initialize
+calls=865 17
+17 16040
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+fn=Foo#waste_cpu
+15 301958
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=<Class::Time>#now
+calls=20693 17
+17 596322
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Time#-
+calls=20593 17
+17 1128419
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Float#<
+calls=50 17
+17 253
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=<Class::Time>#now
+calls=865 17
+17 24194
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Time#-
+calls=861 17
+17 44245
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Float#<
+calls=2 17
+17 10
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+fn=Foo#z
+10 1274
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+cfn=Foo#waste_cpu
+calls=100 12
+12 2014831
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+cfn=Foo#waste_cpu
+calls=4 12
+12 80571
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Integer#times
+0 580
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+cfn=Foo#z
+calls=50 7
+7 2016061
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+fn=Foo#y
+6 16
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Integer#times
+calls=1 7
+7 2016640
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+fn=Foo#x
+2 35
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+cfn=Foo#y
+calls=1 3
+3 2016657
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+cfn=Foo#z
+calls=2 3
+3 80616
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=BasicObject#initialize
+0 6
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Class#new
+0 12
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=BasicObject#initialize
+calls=1 21
+21 6
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Module#method_added
+0 21
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Class#inherited
+0 8
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+fn=Global#[No method]
+1 255
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Class#inherited
+calls=1 1
+1 8
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Module#method_added
+calls=4 15
+15 21
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Class#new
+calls=1 21
+21 18
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb
+cfn=Foo#x
+calls=1 21
+21 2097308
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=IO#set_encoding
+0 64
+
