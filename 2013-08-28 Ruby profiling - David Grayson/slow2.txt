@@ -1,0 +1,16 @@
+Thread ID: 70196477771380
+Fiber ID: 70196478840920
+Total: 12.820327
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name
+ 58.90     10.075     7.552     0.000     2.523   523776   Foo#eql? 
+ 21.04     12.782     2.698     0.000    10.084     1024   Hash#[]= 
+ 19.68      2.523     2.523     0.000     0.000   523776   Kernel#eql? 
+  0.15     12.820     0.020     0.000    12.800        1   Integer#times 
+  0.09      0.018     0.011     0.000     0.007     1024   Class#new 
+  0.08      0.010     0.010     0.000     0.000     1024   Foo#hash 
+  0.05      0.007     0.007     0.000     0.000     1024   BasicObject#initialize 
+  0.00     12.820     0.000     0.000    12.820        1   Global#[No method] 
+
+* indicates recursively called methods

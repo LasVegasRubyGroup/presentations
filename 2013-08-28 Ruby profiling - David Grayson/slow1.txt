@@ -1,0 +1,29 @@
+Thread ID: 69868528131700
+Fiber ID: 69868529619000
+Total: 2.098093
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name
+ 20.48      1.166     0.430     0.000     0.736    22220   Time#- 
+ 14.61      2.096     0.307     0.000     1.789      104   Foo#waste_cpu 
+ 14.26      0.404     0.299     0.000     0.105    22324   Time#initialize 
+ 10.46      0.623     0.219     0.000     0.404    22324   <Class::Time>#now 
+  9.97      0.324     0.209     0.000     0.114    22220   Numeric#quo 
+  9.86      0.312     0.207     0.000     0.105    22220   Rational#to_f 
+  5.45      0.114     0.114     0.000     0.000    22220   Rational#/ 
+  4.99      0.105     0.105     0.000     0.000    22220   Fixnum#fdiv 
+  4.98      0.105     0.105     0.000     0.000    22324   Fixnum#+ 
+  4.82      0.101     0.101     0.000     0.000    22220   Fixnum#- 
+  0.06      2.097     0.001     0.000     2.096       52   Foo#z 
+  0.03      2.017     0.001     0.000     2.017        1   Integer#times 
+  0.01      0.000     0.000     0.000     0.000       52   Float#< 
+  0.01      2.098     0.000     0.000     2.098        2   Global#[No method] 
+  0.00      0.000     0.000     0.000     0.000        2   IO#set_encoding 
+  0.00      2.098     0.000     0.000     2.098        1   Foo#x 
+  0.00      0.000     0.000     0.000     0.000        4   Module#method_added 
+  0.00      2.017     0.000     0.000     2.017        1   Foo#y 
+  0.00      0.000     0.000     0.000     0.000        1   Class#new 
+  0.00      0.000     0.000     0.000     0.000        1   Class#inherited 
+  0.00      0.000     0.000     0.000     0.000        1   BasicObject#initialize 
+
+* indicates recursively called methods
