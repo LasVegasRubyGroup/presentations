@@ -1,0 +1,1175 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <style media="all" type="text/css">
+    table {
+      border-collapse: collapse;
+      border: 1px solid #CCC;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 9pt;
+      line-height: normal;
+      width: 100%;
+    }
+
+    th {
+      text-align: center;
+      border-top: 1px solid #FB7A31;
+      border-bottom: 1px solid #FB7A31;
+      background: #FFC;
+      padding: 0.3em;
+      border-left: 1px solid silver;
+    }
+
+    tr.break td {
+      border: 0;
+      border-top: 1px solid #FB7A31;
+      padding: 0;
+      margin: 0;
+    }
+
+    tr.method td {
+      font-weight: bold;
+    }
+
+    td {
+      padding: 0.3em;
+    }
+
+    td:first-child {
+      width: 190px;
+      }
+
+    td {
+      border-left: 1px solid #CCC;
+      text-align: center;
+    }
+
+    .method_name {
+      text-align: left;
+    }
+
+    tfoot td {
+      text-align: left;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Profile Report</h1>
+    <!-- Threads Table -->
+    <table>
+      <tr>
+        <th>Thread ID</th>
+        
+        <th>Fiber ID</th>
+        
+        <th>Total Time</th>
+      </tr>
+      
+      <tr>
+        
+        <td>70119548984960</td>
+        
+        <td><a href="#70119550472600">70119550472600</a></td>
+        <td>2.100758072</td>
+      </tr>
+      
+    </table>
+
+    <!-- Methods Tables -->
+    
+      
+      <h2><a name="70119550472600">Thread 70119548984960, Fiber: 70119550472600</a></h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>  %Total</th>
+            <th>   %Self</th>
+            <th>     Total</th>
+            <th>      Self</th>
+            <th>      Wait</th>
+            <th>       Child</th>
+            <th>               Calls</th>
+            <th class="method_name">Name</th>
+            <th>Line</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          
+
+              <!-- Parents -->
+              
+
+              <tr class="method">
+                <td> 100.00%</td>
+                <td>   0.01%</td>
+                <td>      2.10</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      2.10</td>
+                <td>                   2</td>
+                <td class="method_name">
+                  <a name="Global_[No method]_70119550472600">
+                     Global#[No method]
+                  </a>
+                </td>
+                <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#1" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:1">1</a></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.10</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.10</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Foo_x_70119550472600">Foo#x</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#21" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:21">21</a></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 4/4</td>
+                  <td class="method_name"><a href="#Module_method_added_70119550472600">Module#method_added</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#15" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:15">15</a></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Class_new_70119550472600">Class#new</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#21" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:21">21</a></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Class_inherited_70119550472600">Class#inherited</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#1" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:1">1</a></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.10</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.10</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Global_[No method]_70119550472600">Global#[No method]</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#21" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:21">21</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  99.99%</td>
+                <td>   0.00%</td>
+                <td>      2.10</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      2.10</td>
+                <td>                   1</td>
+                <td class="method_name">
+                  <a name="Foo_x_70119550472600">
+                     Foo#x
+                  </a>
+                </td>
+                <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#2" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:2">2</a></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.02</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.02</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Foo_y_70119550472600">Foo#y</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#3" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:3">3</a></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.08</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.08</td>
+                  
+                  <td>                2/52</td>
+                  <td class="method_name"><a href="#Foo_z_70119550472600">Foo#z</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#3" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:3">3</a></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.08</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.08</td>
+                  
+                  <td>                2/52</td>
+                  <td class="method_name"><a href="#Foo_x_70119550472600">Foo#x</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#3" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:3">3</a></td>
+                </tr>
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.02</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.02</td>
+                  
+                  <td>               50/52</td>
+                  <td class="method_name"><a href="#Integer_times_70119550472600">Integer#times</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  99.96%</td>
+                <td>   0.06%</td>
+                <td>      2.10</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      2.10</td>
+                <td>                  52</td>
+                <td class="method_name">
+                  <a name="Foo_z_70119550472600">
+                     Foo#z
+                  </a>
+                </td>
+                <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#10" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:10">10</a></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.10</td>
+                  <td>      0.30</td>
+                  <td>      0.00</td>
+                  <td>      1.80</td>
+                  
+                  <td>             104/104</td>
+                  <td class="method_name"><a href="#Foo_waste_cpu_70119550472600">Foo#waste_cpu</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#12" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:12">12</a></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.10</td>
+                  <td>      0.30</td>
+                  <td>      0.00</td>
+                  <td>      1.80</td>
+                  
+                  <td>             104/104</td>
+                  <td class="method_name"><a href="#Foo_z_70119550472600">Foo#z</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#12" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:12">12</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  99.89%</td>
+                <td>  14.29%</td>
+                <td>      2.10</td>
+                <td>      0.30</td>
+                <td>      0.00</td>
+                <td>      1.80</td>
+                <td>                 104</td>
+                <td class="method_name">
+                  <a name="Foo_waste_cpu_70119550472600">
+                     Foo#waste_cpu
+                  </a>
+                </td>
+                <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#15" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:15">15</a></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      1.18</td>
+                  <td>      0.43</td>
+                  <td>      0.00</td>
+                  <td>      0.75</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Time_-_70119550472600">Time#-</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#17" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:17">17</a></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.62</td>
+                  <td>      0.21</td>
+                  <td>      0.00</td>
+                  <td>      0.40</td>
+                  
+                  <td>         20697/20697</td>
+                  <td class="method_name"><a href="#_Class__Time__now_70119550472600">&lt;Class::Time&gt;#now</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#17" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:17">17</a></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>               52/52</td>
+                  <td class="method_name"><a href="#Float___70119550472600">Float#&lt;</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#17" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:17">17</a></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.02</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.02</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Foo_x_70119550472600">Foo#x</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#3" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:3">3</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  96.14%</td>
+                <td>   0.00%</td>
+                <td>      2.02</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      2.02</td>
+                <td>                   1</td>
+                <td class="method_name">
+                  <a name="Foo_y_70119550472600">
+                     Foo#y
+                  </a>
+                </td>
+                <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#6" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:6">6</a></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.02</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.02</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Integer_times_70119550472600">Integer#times</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#7" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:7">7</a></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.02</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.02</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Foo_y_70119550472600">Foo#y</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#7" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:7">7</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  96.14%</td>
+                <td>   0.03%</td>
+                <td>      2.02</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      2.02</td>
+                <td>                   1</td>
+                <td class="method_name">
+                  <a name="Integer_times_70119550472600">
+                     Integer#times
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      2.02</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      2.02</td>
+                  
+                  <td>               50/52</td>
+                  <td class="method_name"><a href="#Foo_z_70119550472600">Foo#z</a></td>
+                  <td></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      1.18</td>
+                  <td>      0.43</td>
+                  <td>      0.00</td>
+                  <td>      0.75</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Foo_waste_cpu_70119550472600">Foo#waste_cpu</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#17" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:17">17</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  56.23%</td>
+                <td>  20.67%</td>
+                <td>      1.18</td>
+                <td>      0.43</td>
+                <td>      0.00</td>
+                <td>      0.75</td>
+                <td>               20593</td>
+                <td class="method_name">
+                  <a name="Time_-_70119550472600">
+                     Time#-
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.33</td>
+                  <td>      0.21</td>
+                  <td>      0.00</td>
+                  <td>      0.12</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Numeric_quo_70119550472600">Numeric#quo</a></td>
+                  <td></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.32</td>
+                  <td>      0.21</td>
+                  <td>      0.00</td>
+                  <td>      0.11</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Rational_to_f_70119550472600">Rational#to_f</a></td>
+                  <td></td>
+                </tr>
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.10</td>
+                  <td>      0.10</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Fixnum_-_70119550472600">Fixnum#-</a></td>
+                  <td></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.62</td>
+                  <td>      0.21</td>
+                  <td>      0.00</td>
+                  <td>      0.40</td>
+                  
+                  <td>         20697/20697</td>
+                  <td class="method_name"><a href="#Foo_waste_cpu_70119550472600">Foo#waste_cpu</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#17" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:17">17</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  29.36%</td>
+                <td>  10.20%</td>
+                <td>      0.62</td>
+                <td>      0.21</td>
+                <td>      0.00</td>
+                <td>      0.40</td>
+                <td>               20697</td>
+                <td class="method_name">
+                  <a name="_Class__Time__now_70119550472600">
+                     &lt;Class::Time&gt;#now
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.40</td>
+                  <td>      0.30</td>
+                  <td>      0.00</td>
+                  <td>      0.11</td>
+                  
+                  <td>         20697/20697</td>
+                  <td class="method_name"><a href="#Time_initialize_70119550472600">Time#initialize</a></td>
+                  <td></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.40</td>
+                  <td>      0.30</td>
+                  <td>      0.00</td>
+                  <td>      0.11</td>
+                  
+                  <td>         20697/20697</td>
+                  <td class="method_name"><a href="#_Class__Time__now_70119550472600">&lt;Class::Time&gt;#now</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  19.15%</td>
+                <td>  14.09%</td>
+                <td>      0.40</td>
+                <td>      0.30</td>
+                <td>      0.00</td>
+                <td>      0.11</td>
+                <td>               20697</td>
+                <td class="method_name">
+                  <a name="Time_initialize_70119550472600">
+                     Time#initialize
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.11</td>
+                  <td>      0.11</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20697/20697</td>
+                  <td class="method_name"><a href="#Fixnum_+_70119550472600">Fixnum#+</a></td>
+                  <td></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.33</td>
+                  <td>      0.21</td>
+                  <td>      0.00</td>
+                  <td>      0.12</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Time_-_70119550472600">Time#-</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  15.57%</td>
+                <td>  10.09%</td>
+                <td>      0.33</td>
+                <td>      0.21</td>
+                <td>      0.00</td>
+                <td>      0.12</td>
+                <td>               20593</td>
+                <td class="method_name">
+                  <a name="Numeric_quo_70119550472600">
+                     Numeric#quo
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.12</td>
+                  <td>      0.12</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Rational_/_70119550472600">Rational#/</a></td>
+                  <td></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.32</td>
+                  <td>      0.21</td>
+                  <td>      0.00</td>
+                  <td>      0.11</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Time_-_70119550472600">Time#-</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>  15.05%</td>
+                <td>   9.91%</td>
+                <td>      0.32</td>
+                <td>      0.21</td>
+                <td>      0.00</td>
+                <td>      0.11</td>
+                <td>               20593</td>
+                <td class="method_name">
+                  <a name="Rational_to_f_70119550472600">
+                     Rational#to_f
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.11</td>
+                  <td>      0.11</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Fixnum_fdiv_70119550472600">Fixnum#fdiv</a></td>
+                  <td></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.12</td>
+                  <td>      0.12</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Numeric_quo_70119550472600">Numeric#quo</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   5.48%</td>
+                <td>   5.48%</td>
+                <td>      0.12</td>
+                <td>      0.12</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>               20593</td>
+                <td class="method_name">
+                  <a name="Rational_/_70119550472600">
+                     Rational#/
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.11</td>
+                  <td>      0.11</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Rational_to_f_70119550472600">Rational#to_f</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   5.14%</td>
+                <td>   5.14%</td>
+                <td>      0.11</td>
+                <td>      0.11</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>               20593</td>
+                <td class="method_name">
+                  <a name="Fixnum_fdiv_70119550472600">
+                     Fixnum#fdiv
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.11</td>
+                  <td>      0.11</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20697/20697</td>
+                  <td class="method_name"><a href="#Time_initialize_70119550472600">Time#initialize</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   5.06%</td>
+                <td>   5.06%</td>
+                <td>      0.11</td>
+                <td>      0.11</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>               20697</td>
+                <td class="method_name">
+                  <a name="Fixnum_+_70119550472600">
+                     Fixnum#+
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.10</td>
+                  <td>      0.10</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>         20593/20593</td>
+                  <td class="method_name"><a href="#Time_-_70119550472600">Time#-</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   4.94%</td>
+                <td>   4.94%</td>
+                <td>      0.10</td>
+                <td>      0.10</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>               20593</td>
+                <td class="method_name">
+                  <a name="Fixnum_-_70119550472600">
+                     Fixnum#-
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>               52/52</td>
+                  <td class="method_name"><a href="#Foo_waste_cpu_70119550472600">Foo#waste_cpu</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#17" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:17">17</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   0.01%</td>
+                <td>   0.01%</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>                  52</td>
+                <td class="method_name">
+                  <a name="Float___70119550472600">
+                     Float#&lt;
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+
+              <tr class="method">
+                <td>   0.00%</td>
+                <td>   0.00%</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>                   2</td>
+                <td class="method_name">
+                  <a name="IO_set_encoding_70119550472600">
+                     IO#set_encoding
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 4/4</td>
+                  <td class="method_name"><a href="#Global_[No method]_70119550472600">Global#[No method]</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#15" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:15">15</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   0.00%</td>
+                <td>   0.00%</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>                   4</td>
+                <td class="method_name">
+                  <a name="Module_method_added_70119550472600">
+                     Module#method_added
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Global_[No method]_70119550472600">Global#[No method]</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#21" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:21">21</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   0.00%</td>
+                <td>   0.00%</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>                   1</td>
+                <td class="method_name">
+                  <a name="Class_new_70119550472600">
+                     Class#new
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#BasicObject_initialize_70119550472600">BasicObject#initialize</a></td>
+                  <td></td>
+                </tr>
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Global_[No method]_70119550472600">Global#[No method]</a></td>
+                  <td><a href="file:///c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb#1" title="/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow1.rb:1">1</a></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   0.00%</td>
+                <td>   0.00%</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>                   1</td>
+                <td class="method_name">
+                  <a name="Class_inherited_70119550472600">
+                     Class#inherited
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+
+              <!-- Parents -->
+              
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  <td>      0.00</td>
+                  
+                  <td>                 1/1</td>
+                  <td class="method_name"><a href="#Class_new_70119550472600">Class#new</a></td>
+                  <td></td>
+                </tr>
+              
+
+              <tr class="method">
+                <td>   0.00%</td>
+                <td>   0.00%</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>      0.00</td>
+                <td>                   1</td>
+                <td class="method_name">
+                  <a name="BasicObject_initialize_70119550472600">
+                     BasicObject#initialize
+                  </a>
+                </td>
+                <td></td>
+              </tr>
+
+              <!-- Children -->
+              
+              <!-- Create divider row -->
+              <tr class="break"><td colspan="9"></td></tr>
+          
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="9">* indicates recursively called methods</td>
+          </tr>
+        </tfoot>
+      </table>
+    
+  </body>
+</html>

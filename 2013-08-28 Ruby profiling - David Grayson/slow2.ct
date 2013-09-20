@@ -1,0 +1,62 @@
+events: process_time
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Kernel#eql?
+0 2522945
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow2.rb
+fn=Foo#eql?
+6 7551605
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Kernel#eql?
+calls=523776 7
+7 2522945
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow2.rb
+fn=Foo#hash
+2 9852
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Hash#[]=
+0 2697976
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow2.rb
+cfn=Foo#hash
+calls=1024 18
+18 9852
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow2.rb
+cfn=Foo#eql?
+calls=523776 18
+18 10074550
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=BasicObject#initialize
+0 6725
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Class#new
+0 11238
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=BasicObject#initialize
+calls=1024 17
+17 6725
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+fn=Integer#times
+0 19871
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Class#new
+calls=1024 17
+17 17963
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Hash#[]=
+calls=1024 18
+18 12782378
+
+fl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/slow2.rb
+fn=Global#[No method]
+15 115
+cfl=/c/Users/David/Documents/davidegrayson.com/presentations/20130828-ruby-profiling/ruby_runtime
+cfn=Integer#times
+calls=1 16
+16 12820212
+
