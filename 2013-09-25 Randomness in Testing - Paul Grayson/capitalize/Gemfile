@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+group :development do
+  gem 'shuhari'
+  gem 'rspec'
+  gem 'guard-rspec'
+  gem 'rb-notifu'
+  gem 'win32console'
+  # gem 'ruby_gntp'
+#  gem 'wdm'
+end
