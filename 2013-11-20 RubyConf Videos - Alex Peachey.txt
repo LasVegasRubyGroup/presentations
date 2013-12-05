@@ -1,0 +1,30 @@
+RubyConf videos are available on Confreaks. Not all of them yet, but more seem to be coming in all the time.
+
+To reiterate a few of my picks from lightning talks:
+
+Extending Gems - Good to view, especially if you are or want to be a gem writer
+http://www.confreaks.com/videos/2884-rubyconf2013-extending-gems-patterns-and-anti-patterns-of-making-your-gem-pluggable
+
+Under the Influence - DO NOT WASTE YOUR TIME.
+http://www.confreaks.com/videos/2858-rubyconf2013-under-the-influence
+
+Recommendation Engines in Redis - Not bad, worth watching if you are interesting in building such a thing, worth even more if you are interested in building it just like he did.
+http://www.confreaks.com/videos/2886-rubyconf2013-recommendation-engines-with-redis-and-ruby
+
+My Kids Ruby Journey - Worth watching, especially if you like kids and teaching kids to code.
+http://www.confreaks.com/videos/2868-rubyconf2013-my-kidsruby-journey
+
+The Future of JRuby - Great info on where the project is headed. Very good if you use or are interested in using JRuby.
+http://www.confreaks.com/videos/2879-rubyconf2013-the-future-of-jruby
+
+A Lightweight SOA Framework Using Ruby/Apache Thrift/AMQP - A very interesting look at service oriented approaches to development. If you have a big project, it is something to consider.
+http://www.confreaks.com/videos/2875-rubyconf2013-a-lightweight-soa-framework-using-ruby-apache-thrift-and-amqp
+
+Test Driven Neural Networks - I thought it was well presented and pretty cool, but you probably need to be interested in the subject.
+http://www.confreaks.com/videos/2873-rubyconf2013-test-driven-neural-networks-with-ruby
+
+Preferring Object Oriented Programming to Metaprogramming - YES! Watch this.
+http://www.confreaks.com/videos/2874-rubyconf2013-preferring-object-orientation-to-metaprogramming
+
+Unleash the Secrets of the Standard Library - A nice look at some tools that come with Ruby that likely will make development easier for you. You don't always need to add a shiny gem to your project when something standard will work.
+http://www.confreaks.com/videos/2878-rubyconf2013-unleash-the-secrets-of-the-standard-library-with-simpledelegator-forwardable-and-more
