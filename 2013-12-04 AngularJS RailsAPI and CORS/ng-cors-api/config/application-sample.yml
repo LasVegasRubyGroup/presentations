@@ -1,0 +1,4 @@
+# Add application configuration variables here, as shown below.
+#
+TWITTER_KEY: GET A KEY FROM TWITTER.OCM
+TWITTER_SECRET_KEY: And add the secret one on this line :)

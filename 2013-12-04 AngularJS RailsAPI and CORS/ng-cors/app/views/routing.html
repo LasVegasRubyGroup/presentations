@@ -1,0 +1,97 @@
+<h2>Routing with UI-Router</h2>
+<p>Say goodbye to links and hello to states!</p>
+<hr>
+<h3>$stateProvider</h3>
+<p>Nowadays Angular does not ship with a routing provider, so it is up to you to choose between <a href="http://docs.angularjs.org/api/ngRoute">NgRoute</a>
+and <a href="https://github.com/angular-ui/ui-router">UI-Router</a>. I like the latter because thinking of various parts of my UI as states, makes me feel
+more like a painter, and I enjoy its support for nesting views and having that correspond to the URL. I find it to be similar to EmberJS's url scheme, and the 
+URL was the best part I enjoyed about Ember.</p>
+<p>Here's to get up and running with it</p>
+<p>Command Line</p>
+<div hljs>
+bower install --save angular-ui-router
+</div>
+<p>app.js</p>
+<div hljs>
+// Add the module to your application
+angular.module('ngCorsApp', [
+  'ui.router',
+])
+// add $stateProvider routes
+.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/');
+  $stateProvider
+    .state('root', {
+      url: '/',
+      templateUrl: 'views/main.html',
+      controller: 'MainCtrl'
+    })
+    .state('why', {
+      url: '/why',
+      templateUrl: 'views/why.html',
+      controller: 'WhyCtrl'
+    })
+    .state('view_scope_server', {
+      url: '/view_scope_server',
+      templateUrl: 'views/view_scope_server.html',
+      controller: 'ViewScopeServerCtrl'
+    })
+</div>
+<p>index.html</p>
+<div hljs>
+<div ui-view></div>
+
+<li ng-class="{active: !!$state.includes('why')}"><a ui-sref="why">Why?</a></li>
+<li ng-class="{active: !!$state.includes('view_scope_server')}"><a ui-sref="view_scope_server">VSS</a></li>
+<li ng-class="{active: !!$state.includes('scope')}"><a ui-sref="scope">$scope</a></li>
+<li ng-class="{active: !!$state.includes('filters')}"><a ui-sref="filters">Filters</a></li>
+<li ng-class="{active: !!$state.includes('directives')}"><a ui-sref="directives">Directives</a></li>
+</div>
+<hr>
+<h3>Nesting Routes</h3>
+<div hljs>
+      .state('CORS', {
+        url: '/CORS',
+        templateUrl: '/views/CORS.html',
+        controller: 'CORSCtrl'
+      })
+      .state('CORS.rails', {
+        url: '/rails',
+        templateUrl: '/views/CORS.rails.html'
+</div>
+<p>
+<hr>
+<h3>HTML5 History</h3>
+<p>Look above, we are routing in our angular application with no '#/' in the url!, that's because we are using the HTML5 History API, a way to manipulate HTML with javascript.
+<a href="http://caniuse.com/#search=history">All modern browsers support HTML5 History</a> and <a href="http://diveintohtml5.info/history.html">here is a great intro to the topic</a>
+I think this is absolutely necessary when upgrading from an older application to keep the links consistent.</p>
+<p>There is some work we need to do to set it up in our application</p>
+<p>app.js</p>
+<div hljs> 
+$locationProvider.html5Mode(true).hashPrefix('#');
+</div>
+<p>Command Line</p>
+<div hljs>
+npm install --save-dev connect-modrewrite
+</div>
+<p>Gruntfile.js</p>
+<div hljs>
+var modRewrite = require('connect-modrewrite')
+
+// then inside the livereload section
+livereload: {
+  options: {
+    open: true,
+    base: [
+      '.tmp',
+    '<%= yeoman.app %>'
+      ],
+    middleware: function (connect, options) {
+      var optBase = (typeof options.base === 'string') ? [options.base] : options.base;
+      return [require('connect-modrewrite')(['!(\\..+)$ / [L]'])].concat(
+          optBase.map(function(path){ return connect.static(path); }));
+    }
+  }
+},
+</div>
+<p>This is <a href="https://github.com/yeoman/generator-angular/issues/433">hot off the press</a> (well, pull requests anyway)</p>

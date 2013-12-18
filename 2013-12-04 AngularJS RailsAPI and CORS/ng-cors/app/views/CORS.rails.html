@@ -1,0 +1,14 @@
+<h4>small rails app</h4>
+<p>Command Line</p>
+<div hljs>rails g controller secret index</div>
+<p>app/controllers/secret_controller.rb</p>
+<div hljs>
+  @@SECRET_PASSWORD = 'alibaba'
+  def index
+    if params[:password] == @@SECRET_PASSWORD
+      render status: 200, json: 'You may now enter'
+    else
+      render status: 403, json: '...'
+    end
+  end
+</div>
