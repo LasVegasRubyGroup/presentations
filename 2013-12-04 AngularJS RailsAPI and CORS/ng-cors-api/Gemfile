@@ -1,0 +1,17 @@
+source 'https://rubygems.org'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.1'
+
+gem 'rails-api'
+
+# Use pg as the database for Active Record
+gem 'pg'
+gem 'rack-cors', require: 'rack/cors'
+
+group :test do
+  gem 'rspec-rails'
+  gem 'rack-test'
+  gem 'database_cleaner'
+  gem 'guard-rspec'
+end

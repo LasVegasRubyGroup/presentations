@@ -1,0 +1,76 @@
+<h2>Filters</h2>
+<p>Making data more accessible</p>
+<hr>
+<h4>Built in Directives</h4>
+<b>Limit</b>
+<div class="row">
+  <div class="large-6 columns">
+    <div hljs>
+      <p class="list" ng-repeat="beer in beers | limitTo:10">
+      {{beer.beer}} by {{beer.brewery}}
+      </p>
+    </div>
+    </div><div class="large-6 columns">
+    <p class="list" ng-repeat="beer in beers | limitTo:10">
+    {{beer.beer}} by {{beer.brewery}}
+    </p>
+  </div>
+</div>
+<hr>
+<b>orderBy</b>
+<div class="row">
+  <div class="large-6 columns">
+    <div hljs>
+      <p class="list" ng-repeat="beer in beers | orderBy:'beer' | limitTo:10">
+      {{beer.beer}} by {{beer.brewery}}
+      </p>
+    </div>
+    </div><div class="large-6 columns">
+    <p class="list" ng-repeat="beer in beers | orderBy:'beer' | limitTo:10">
+    {{beer.beer}} by {{beer.brewery}}
+    </p>
+  </div>
+</div>
+<hr>
+<b>lowercase</b>
+<div class="row">
+  <div class="large-6 columns">
+    <div hljs>
+      <p class="list" ng-repeat="beer in beers | orderBy:'beer' | limitTo:10">
+      {{beer.beer | lowercase}} by {{beer.brewery | lowercase}}
+      </p>
+    </div>
+    </div><div class="large-6 columns">
+    <p class="list" ng-repeat="beer in beers | orderBy:'beer' | limitTo:10">
+    {{beer.beer | lowercase}} by {{beer.brewery | lowercase}}
+    </p>
+  </div>
+</div>
+<hr>
+<h4>Building a Custom Directive</h4>
+<p>What if I want to capitalize the first letter of every word?</p>
+<div class="row">
+  <div class="large-6 columns">
+    <div hljs>
+      <p class="list" ng-repeat="beer in beers | orderBy:'beer' | limitTo:10">
+      {{beer.beer | capitalize}} by {{beer.brewery | capitalize}}
+      </p>
+    </div>
+    </div><div class="large-6 columns">
+    <p class="list" ng-repeat="beer in beers | orderBy:'beer' | limitTo:10">
+    {{beer.beer | capitalize}} by {{beer.brewery | capitalize}}
+    </p>
+  </div>
+</div>
+<p>Capitalize filter thanks to <a href="http://stackoverflow.com/questions/15242592/angular-js-how-to-autocapitalize-an-input-field">this</a>.
+</p>
+<div hljs>
+angular.module('ngCorsApp')
+.filter('capitalize', function () {
+  return function(input, scope) {
+    return input.replace(/\w\S*/g, function(txt){
+       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+  }
+});
+</div>
