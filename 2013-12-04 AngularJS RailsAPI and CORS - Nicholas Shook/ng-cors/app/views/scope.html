@@ -1,0 +1,43 @@
+<h2>$Scope</h2>
+<p class="explanation">
+$scope is where the magic in AngularJS happens.
+</p>
+<hr>
+<h3>$Scope can be initialized with default values</h3>
+<p>In a controller you can add</p>
+<div hljs class="code">
+  $scope.awesome_group = 'John Doe';
+</div>
+<p>And in a view you can add</p>
+<div hljs class="code">
+  <p>{{awesome_group}}</p>
+</div>
+<p>lets you put that awesome group in your template! Awesome Group: {{awesome_group}}
+<hr>
+<h3>$Scope can watch changes</h3>
+<p>What is your name?</p>
+<input type="text" ng-model="person"></input>
+<div ng-if="!nick.test(person)">
+  <h4>Hello {{person}}</h4>
+</div>
+<div ng-if="nick.test(person)">
+  <p class="mad">STUDY FOR THE BAR {{person | uppercase}}</p>
+</div>
+<p>scope.html</p>
+<div hljs class="code">
+<input type="text" ng-model="person"></input>
+<div ng-if="!nick.test(person)">
+  <p>Hello {{person}}</p>
+</div>
+<div ng-if="nick.test(person)">
+  <p class="mad">STUDY FOR THE BAR {{person | uppercase}}</p>
+</div>
+</div>
+<p>scope.js</p>
+<div hljs class="code"> 
+angular.module('ngCorsApp')
+.controller('ScopeCtrl', function ($scope) {
+  $scope.person = '';
+  $scope.nick = /nick/i;
+});
+</div>
