@@ -1,0 +1,18 @@
+<h2>View Scope Server</h2>
+<p>An alternative explanation from MV*</p>
+<hr>
+<h4>View</h4>
+<p>This is your HTML, CSS, and your basic Javascript that Angular can help organize for you.</p>
+<p>I categorize filters and directives as being a part of the view.</p>
+<hr>
+<h4>$Scope</h4>
+<p>This is the ViewModel, similar to an instance variable in a controller of rails.</p>
+<div hljs>
+def index
+  @users = User.all.pluck('username')
+end
+</div>
+<hr>
+<h4>Server</h4>
+<p>Finally what is an app without a way for one computer to talk to the other?</p>
+<p>I loosely categorize services and anything with $http as being part of the server, I also categorize fake server implementations such as loading some JSON in this as well.</p>

@@ -1,0 +1,38 @@
+<h2>Directives</h2>
+<p>Decorators on steroids</p>
+<hr>
+<h4>Ng-Repeat</h4>
+<p>Let's compare and contrast how rails iterates through an array and how angular does</p>
+<p>A rails controller</p>
+<div hljs>
+def index
+  @products = Product.all
+end
+</div>
+<p>A rails view</p>
+<div hljs>
+  -@products.each do |product|
+    p= @product.name
+</div>
+<p>An Angular controller</p>
+<div hljs>
+function($scope) {
+  $scope.products = [{name: 'Zumo', description: 'this is awesome'},{name: 'LEDs', description: 'not intended for raving'}]
+}
+</div>
+<p>An angular view</p>
+<div hljs>
+<div ng-repeat="product in products">
+  <h3>{{product.name}}</h3>
+  <p>{{product.description}}</p>
+</div>
+</div>
+<hr>
+<h4>The HighlightJS Directive</h4>
+<p>Notice how the code is highlighted?! Well I used <a href="https://github.com/pc035860/angular-highlightjs">this awesome directive</a> to make it happen</p>
+<div hljs>
+<div hljs>
+  insert code here!
+</div>
+</div>
+<p>Putting code inside a directive and adding logic to the directive that does something with that code is called <i>transclusion</i>.</p>

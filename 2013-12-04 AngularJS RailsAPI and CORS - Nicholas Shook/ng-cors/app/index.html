@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="/bower_components/highlightjs/styles/monokai.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="ngCorsApp">
+    <!-- Add your site or application content here -->
+    <nav class="top-bar header">
+    <ul class="title-area">
+      <li class="name">
+      <h1><a ui-sref="root">AngularJS & CORS</a></h1>
+      </li>
+    </ul>
+      <section class="top-bar-section">
+      <ul class="right">
+        <li ng-class="{active: !!$state.includes('why')}"><a ui-sref="why">Why?</a></li>
+        <li ng-class="{active: !!$state.includes('view_scope_server')}"><a ui-sref="view_scope_server">VSS</a></li>
+        <li ng-class="{active: !!$state.includes('scope')}"><a ui-sref="scope">$scope</a></li>
+        <li ng-class="{active: !!$state.includes('directives')}"><a ui-sref="directives">Directives</a></li>
+        <li ng-class="{active: !!$state.includes('filters')}"><a ui-sref="filters">Filters</a></li>
+        <li ng-class="{active: !!$state.includes('routing')}"><a ui-sref="routing">Routing</a></li>
+        <li ng-class="{active: !!$state.includes('yeoman')}"><a ui-sref="yeoman">Yeoman</a></li>
+        <li ng-class="{active: !!$state.includes('CORS')}"><a ui-sref="CORS">CORS</a></li>
+        <li ng-class="{active: !!$state.includes('epilogue')}"><a ui-sref="epilogue">Epilogue</a></li>
+      </ul>
+      </section>
+    </nav>
+    <div class="panel" ui-view></div>
+
+    <div class="footer">
+      <p>
+      by <a href="https://twitter.com/shicholas">Shicholas</a>
+      | This code is hosted on 
+      <a href="https://github.com/shicholas/ng-cors">Github</a>
+      </p>
+    </div>
+
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/modules.js -->
+    <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/bower_components/highlightjs/highlight.pack.js"></script>
+    <script src="/bower_components/angular-highlightjs/angular-highlightjs.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/main.js"></script>
+    <script src="/scripts/controllers/epilogue.js"></script>
+    <script src="/scripts/controllers/cors.js"></script>
+    <script src="/scripts/controllers/yeoman.js"></script>
+    <script src="/scripts/controllers/directives.js"></script>
+    <script src="/scripts/controllers/routing.js"></script>
+    <script src="/scripts/controllers/filters.js"></script>
+    <script src="/scripts/controllers/scope.js"></script>
+    <script src="/scripts/controllers/scope.js"></script>
+    <script src="/scripts/controllers/view_scope_server.js"></script>
+    <script src="/scripts/filters/capitalize.js"></script>
+    <script src="scripts/services/password.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
