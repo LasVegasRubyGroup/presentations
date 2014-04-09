@@ -1,0 +1,12 @@
+(global-set-key (kbd "s-<right>") 'bufshow-next)
+(global-set-key (kbd "s-<left>") 'bufshow-prev)
+(bufshow-start
+  [("e1.rb")
+   ("e2.rb")
+   ("e3.rb")
+   ("e4.rb")
+   ("e5.rb")
+   ("e6.rb")
+   ("e7.rb")
+   ("e8.rb")
+   ("e9.rb")])
