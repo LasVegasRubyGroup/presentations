@@ -1,0 +1,5 @@
+If you want to check out the code it's at
+https://github.com/shicholas/elasticsearch-presentation.
+
+Be sure to check out the branches too! for an example of fuzzy, filters and
+tokens!
