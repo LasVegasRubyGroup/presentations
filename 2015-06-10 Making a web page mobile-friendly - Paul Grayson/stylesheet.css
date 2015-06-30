@@ -1,0 +1,55 @@
+html {
+  font-size: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td,th {
+  border: 1px solid gray;
+  padding: 0.4em;
+}
+
+div {
+  padding: 1em;
+  margin: 1em;
+}
+
+#box1 {
+  border: 1px solid red;
+  font-size: 80%;
+  width: 12em;
+}
+
+#box2 {
+  border: 1px solid blue;
+  font-size: 80%;
+  width: 10em;
+}
+
+#box3 {
+  border: 1px solid green;
+  font-size: 1rem;
+  width: 3em;
+}
+
+img { max-width: 100%; }
+
+table.wrap {
+  float: left;
+  display: inline-block;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 100%;
+  }
+  table {
+    font-size: 75%;
+  }
+}
